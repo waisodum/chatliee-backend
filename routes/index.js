@@ -75,4 +75,8 @@ router.delete("/delete", async (req, res, next) => {
   console.log(data);
 });
 
+router.get("/favicon.ico ", (req, res) => {
+  res.send("success");
+});
+
 module.exports = router;
